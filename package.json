@@ -9,19 +9,24 @@
         "dev": "nodemon src/app.ts"
     },
     "dependencies": {
-        "reflect-metadata": "^0.2.1",
+        "@types/webrtc": "^0.0.42",
         "cors": "^2.8.5",
         "express": "^4.18.2",
-        "tsyringe": "^4.8.0"
+        "i": "^0.3.7",
+        "npm": "^10.4.0",
+        "reflect-metadata": "^0.2.1",
+        "tsyringe": "^4.8.0",
+        "webrtc": "^1.14.1",
+        "webrtc-adapter": "^8.2.3"
     },
     "devDependencies": {
+        "@types/cors": "^2.8.17",
         "@types/express": "^4.17.21",
+        "@types/node": "^20.10.3",
         "dotenv": "^16.3.1",
         "nodemon": "^3.0.2",
-        "typescript": "^5.3.2",
-        "@types/node": "^20.10.3",
         "ts-node": "^10.9.1",
-        "@types/cors": "^2.8.17"
+        "typescript": "^5.3.2"
     },
     "keywords": [],
     "author": "",
