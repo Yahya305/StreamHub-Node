@@ -1,9 +1,9 @@
 import "reflect-metadata";
 
 import dotenv from "dotenv";
-import Middlewares from "./middlewares/Middlewares";
-import ErrorMiddleware from "./middlewares/ErrorMiddleware";
-import TestRouter from "./routers/TestRouter";
+import Middlewares from "./src/middlewares/Middlewares";
+import ErrorMiddleware from "./src/middlewares/ErrorMiddleware";
+import TestRouter from "./src/routers/TestRouter";
 
 dotenv.config();
 const PORT = 8000;
@@ -15,6 +15,7 @@ const app = Middlewares();
 
 // Routers
 app.use("/test/", TestRouter);
+app.use("/api/health", (_,res)=>res.status(200).send("Server is Up and Running!"));
 
 // Handle Error After Controller
 app.use(ErrorMiddleware);
